@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Join Now!!</title>
+  </head>
+  <body>
+    <h1>Please fill out the Registration Form:</h1>
+    <br /><br />
+    <form method="post" action="/user/<%=id%>">
+      <label>Enter Username : </label>
+      <input type="text" placeholder="john_smith" name="userName" />
+      <br /><br />
+      <label>Enter Email : </label>
+      <input
+        type="email"
+        placeholder="johnsmith@gmail.com"
+        name="email"
+      /><br /><br />
+      <label>Enter Password : </label>
+      <input type="password" placeholder="type.." name="password" /> <br />
+      <br />
+      <button class="submitBtn">Create Account</button>
+    </form>
+  </body>
+</html>

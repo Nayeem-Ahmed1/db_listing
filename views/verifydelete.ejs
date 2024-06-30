@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Edit Page</title>
+  </head>
+  <body>
+    <h1>Are You Sure That You Want to Delete?</h1>
+    <br /><br />
+    <form method="post" action="/user/<%=id%>?_method=DELETE">
+      <label for="userName">Enter Username :</label>
+      <input type="text" name="userName" placeholder="john_smith" /><br />
+      <br />
+      <label for="password">Enter Password :</label>
+      <input type="password" name="password" placeholder="password.." /> <br />
+      <br />
+      <button class="submitBtn">Submit</button>
+    </form>
+  </body>
+</html>

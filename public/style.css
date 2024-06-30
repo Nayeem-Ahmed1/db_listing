@@ -1,0 +1,29 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.joinBtn,
+.submitBtn {
+  padding: 0.6em;
+  border-radius: 8%;
+  background-color: cadetblue;
+  color: azure;
+  border: 1px cadetblue solid;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  background-color: red;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.editBtn {
+  cursor: pointer;
+  background-color: bisque;
+}
+
+.listUserHeader {
+  text-align: left;
+}

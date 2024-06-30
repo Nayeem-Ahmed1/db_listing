@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>All Users</title>
+  </head>
+  <body>
+    <div>
+      <h1 class="listUserHeader">Here Is The List Of All Users :</h1>
+      <br />
+      <table border="1" cellspacing="0" cellpadding="10px">
+        <tr>
+          <th>User ID</th>
+          <th>Username</th>
+          <th>Email</th>
+        </tr>
+        <%for(user of alluser) { %>
+        <tr>
+          <td><%=user.user_id%></td>
+          <td><%=user.userName%></td>
+          <td><%=user.email%></td>
+          <td>
+            <form method="get" action="/user/<%=user.user_id%>/edit">
+              <button class="editBtn">Edit</button>
+            </form>
+          </td>
+          <td>
+            <form method="get" action="/user/<%=user.user_id%>/delete">
+              <button class="deleteBtn">DELETE</button>
+            </form>
+          </td>
+        </tr>
+        <% } %>
+      </table>
+    </div>
+  </body>
+</html>
